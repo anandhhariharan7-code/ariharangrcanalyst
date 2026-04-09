@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arihara Suthan A — GRC Analyst Portfolio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Syne:wght@400;600;700;800&display=swap');
+
+        :root {
+            --bg:#060D18;--bg2:#0A1628;--bg3:#0F1E35;--card:#0D1D32;--cardHov:#122340;
+            --border:#1A2E4A;--border2:#223550;--blue:#0EA5E9;--blueD:#0284C7;--blueL:#38BDF8;
+            --cyan:#06B6D4;--teal:#0891B2;--white:#F8FAFC;--offwhite:#CBD5E1;--muted:#64748B;
+            --accent:#0EA5E9;--heading:'Syne',sans-serif;--body:'Inter',sans-serif;--radius:12px;
+            --shadow:0 4px 24px rgba(0,0,0,0.4);
+        }
+
+        *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+        html{scroll-behavior:smooth;font-size:16px;}
+        body{font-family:var(--body);background:var(--bg);color:var(--white);line-height:1.65;overflow-x:hidden;}
+
+        nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(6,13,24,0.92);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);padding:0 40px;height:64px;display:flex;align-items:center;justify-content:space-between;}
+        .nav-logo{font-family:var(--heading);font-size:1.1rem;font-weight:700;color:var(--white);display:flex;align-items:center;gap:10px;}
+        .nav-links{display:flex;align-items:center;gap:8px;list-style:none;}
+        .nav-links a{text-decoration:none;color:var(--offwhite);font-size:0.85rem;padding:6px 14px;border-radius:6px;transition:0.2s;}
+        .nav-links a:hover{background:rgba(14,165,233,0.1);color:var(--blueL);}
+
+        section{padding:80px 40px;}
+        .section-inner{max-width:1100px;margin:0 auto;}
+        .section-label{font-size:0.75rem;font-weight:600;color:var(--blue);letter-spacing:0.15em;text-transform:uppercase;margin-bottom:10px;display:flex;align-items:center;gap:8px;}
+        .section-label::before{content:'';display:inline-block;width:20px;height:2px;background:var(--blue);}
+        .section-title{font-family:var(--heading);font-size:clamp(1.6rem,3vw,2.2rem);font-weight:700;margin-bottom:12px;color:var(--white);}
+
+        .profile-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);}
+        .profile-cover{height:140px;background:linear-gradient(135deg,#0B1F3A 0%,#0EA5E9 100%);}
+        .profile-body{padding:0 32px 32px;position:relative;}
+
+        .photo-wrap{position:relative;display:inline-block;margin-top:-48px;margin-bottom:12px;}
+        .profile-avatar{width:96px;height:96px;border-radius:50%;border:4px solid var(--card);background:var(--bg3);display:flex;align-items:center;justify-content:center;overflow:hidden;}
+        .profile-avatar img{width:100%;height:100%;object-fit:cover;}
+
+        .projects-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;}
+        .project-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;transition:all 0.25s;display:flex;flex-direction:column;text-decoration:none;color:inherit;}
+        .project-card:hover{transform:translateY(-5px); border-color:var(--blue);}
+
+        .pc-link-section{padding:12px 22px; border-top:1px solid var(--border); background:rgba(14,165,233,0.05); text-align:right;}
+        .pc-link-go{color:var(--blueL); font-weight:700; text-decoration:none; font-size:0.85rem;}
+
+        .skill-bar-bg{height:4px;background:var(--border);border-radius:2px;overflow:hidden;margin-top:8px;}
+        .skill-bar-fill{height:100%;background:linear-gradient(90deg,var(--blue),var(--cyan));}
+
+        footer{background:var(--bg2);border-top:1px solid var(--border);padding:40px;text-align:center;}
+        @media(max-width:900px){.projects-grid{grid-template-columns:1fr;} nav{padding:0 20px;}}
+    </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo">Arihara Suthan A</div>
+  <ul class="nav-links">
+    <li><a href="#profile">Profile</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home" style="min-height:70vh; display:flex; align-items:center;">
+  <div class="section-inner">
+    <div class="section-label">Portfolio 2026</div>
+    <h1 class="section-title" style="font-size:3.5rem;">Arihara Suthan A</h1>
+    <p style="font-size:1.2rem; color:var(--offwhite); margin-bottom:20px;">Junior GRC Analyst</p>
+    <p style="max-width:600px; color:var(--muted);">B.Com Honours graduate &amp; Company Secretary (CS Executive) building GRC frameworks for the UAE's regulated sectors.</p>
+  </div>
+</section>
+
+<!-- PROFILE -->
+<section id="profile">
+  <div class="section-inner">
+    <div class="section-label">About</div>
+    <h2 class="section-title">Professional Profile</h2>
+    <div class="profile-card">
+      <div class="profile-cover"></div>
+      <div class="profile-body">
+        <div class="photo-wrap">
+          <div class="profile-avatar">
+            <img src="src/profile.jpg" alt="Arihara Suthan A">
+          </div>
+        </div>
+        <div>
+            <h3>Arihara Suthan A</h3>
+            <p style="color:var(--offwhite);">GRC Analyst & Company Secretary (Executive), B.Com (Honours)</p>
+            <p style="margin-top:15px; font-size:0.95rem; line-height:1.7; color:var(--muted);">Expertise in corporate governance, company law, and UAE PDPL/VARA regulations.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="section-inner">
+    <div class="section-label">Portfolio</div>
+    <h2 class="section-title">GRC Projects</h2>
+    <div class="projects-grid">
+      
+      <a href="https://1drv.ms/p/c/965fd049948d3976/IQANpjH0z0MuQrjnnBq4U9uvATHVBeK6384gmi_p9xoJZeU?e=5Vn1Qt" target="_blank" class="project-card">
+        <div style="height:5px; background:var(--gold);"></div>
+        <div style="padding:22px; flex:1;">
+          <h3>Virtual Asset AML/CFT Programme</h3>
+          <p style="font-size:0.85rem; color:var(--muted); margin:12px 0;">VARA-aligned compliance for crypto exchanges.</p>
+        </div>
+        <div class="pc-link-section">
+            <span class="pc-link-go">View Case Study →</span>
+        </div>
+      </a>
+
+      <a href="https://1drv.ms/f/c/965fd049948d3976/IgAMLKJrjrxdQbSeGD6jt4sfAYpgtsp0Yve6yZZ_XBwf5UE?e=7olras" target="_blank" class="project-card">
+        <div style="height:5px; background:var(--blue);"></div>
+        <div style="padding:22px; flex:1;">
+          <h3>UAE PDPL Compliance Toolkit</h3>
+          <p style="font-size:0.85rem; color:var(--muted); margin:12px 0;">Data protection framework including ROPA and DPIA.</p>
+        </div>
+        <div class="pc-link-section">
+            <span class="pc-link-go">View Toolkit →</span>
+        </div>
+      </a>
+
+      <a href="https://1drv.ms/p/c/965fd049948d3976/IQAH2KFJmGd7R4u05AnUxBIzAXrLBaJ-epIuodcBqt5I2vk?e=EjM4nB" target="_blank" class="project-card">
+        <div style="height:5px; background:var(--purple);"></div>
+        <div style="padding:22px; flex:1;">
+          <h3>AI Governance Framework</h3>
+          <p style="font-size:0.85rem; color:var(--muted); margin:12px 0;">ISO 42001 and CBUAE aligned risk framework.</p>
+        </div>
+        <div class="pc-link-section">
+            <span class="pc-link-go">View Framework →</span>
+        </div>
+      </a>
+
+      <a href="https://1drv.ms/p/c/965fd049948d3976/IQDOz26OXugLQJEjyruEW6RDAepa_90PBXuCgkR2Q8Tg9ik?e=DR6t8d" target="_blank" class="project-card">
+        <div style="height:5px; background:var(--green);"></div>
+        <div style="padding:22px; flex:1;">
+          <h3>Cybersecurity Gap Assessment</h3>
+          <p style="font-size:0.85rem; color:var(--muted); margin:12px 0;">NESA IAR vs ISO 27001 mapping for UAE entities.</p>
+        </div>
+        <div class="pc-link-section">
+            <span class="pc-link-go">View Assessment →</span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" style="background:var(--bg2);">
+  <div class="section-inner">
+    <div class="section-label">Contact</div>
+    <h2 class="section-title">Get In Touch</h2>
+    <div class="profile-card" style="padding:40px; display:grid; grid-template-columns:repeat(auto-fit, minmax(250px, 1fr)); gap:30px;">
+        <div>
+            <p style="color:var(--blueL); font-weight:700; font-size:0.75rem; text-transform:uppercase;">Email Address</p>
+            <div style="font-size:1.1rem; font-weight:500;">anandhhariharan7@gmail.com</div>
+        </div>
+        <div>
+            <p style="color:var(--blueL); font-weight:700; font-size:0.75rem; text-transform:uppercase;">Phone Number</p>
+            <div style="font-size:1.1rem; font-weight:500;">+91 - 9843526005</div>
+        </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+    <p style="font-weight:700;">Arihara Suthan A</p>
+    <p style="font-size:0.8rem; color:var(--muted); margin:10px 0;">Junior GRC Analyst &nbsp;·&nbsp; UAE Regulatory Compliance</p>
+    <a href="mailto:anandhhariharan7@gmail.com" style="color:var(--blue); text-decoration:none; font-weight:700;">Contact Me</a>
+</footer>
+
+</body>
+</html>
